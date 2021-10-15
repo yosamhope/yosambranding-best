@@ -1,0 +1,85 @@
+.navigation{
+    position:fixed;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    z-index:2;
+    background-color:rgb(201, 109, 93, 0.95);
+    display:none;
+}
+.navigation > div{
+    margin:auto;
+    padding:1.5rem 0.5rem;
+}
+
+@media (min-width:1024px){
+    .navigation > div{
+        width:85%;
+    }
+}
+@media (min-width:768px) and (max-width:1024px){
+    .navigation > div{
+        width:90%;
+    }
+}
+@media (min-width:425px) and (max-width:768px){
+    .navigation > div{
+        width:95%;
+    }
+}
+@media (min-width:425px){
+    .navigation > div{
+        padding:0.5rem 0.5rem;
+    }
+}
+
+.navigation > div > div:first-of-type{
+    font-size:3rem;
+    text-align:right;
+}
+@media (max-width:425px){
+    .navigation > div > div:first-of-type{
+        margin-right:1rem;
+    }
+}
+.navigation > div > div:first-of-type span:hover{
+    cursor:pointer;
+}
+
+.navigation > div > div:last-of-type ul{
+    padding:0rem;
+    margin:0rem auto;
+    list-style:none;
+    height:83vh;
+    overflow-y: auto;
+    max-width:800px;
+
+}
+@media (min-width:670px){
+    .navigation > div > div:last-of-type ul{
+        display:grid;
+        display:-ms-grid;
+        display:-moz-grid;
+        grid-template-columns:50% 50%;
+        height:auto;
+    }
+}
+
+.navigation > div > div:last-of-type > ul> li{
+    padding:0.8rem;
+    margin:0.2rem;
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+
+.navigation > div > div:last-of-type > ul > li > a{
+    color:rgb(238, 238, 238);
+    text-decoration:none;
+}
+
+.navigation > div > div:last-of-type > ul > li > a:hover{
+    border-left:2px solid rgb(225, 0, 255);
+    padding-left:0.5rem;
+}

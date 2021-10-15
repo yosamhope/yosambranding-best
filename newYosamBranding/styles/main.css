@@ -1,0 +1,14 @@
+main{
+    margin:auto;
+}
+@media (min-width:1024px){
+    main{
+        width:90%;
+        padding:2rem 3rem;
+    }
+}
+@media (max-width:1024px){
+    main{
+        width:95%;
+    }
+}

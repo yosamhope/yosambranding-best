@@ -1,0 +1,124 @@
+.landingPage{
+    height:100vh;
+    position:relative;
+}
+.fullpageBackground{
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:rgb(240, 240, 240);
+}
+.firstSection{
+    margin-top:-3.97rem;
+    /* background-image:url("../public/landingBackground.png"); */
+    background-image:url("../public/jida-li--WhelqIFgTg-unsplash.jpg");
+    /* background-image:url("../public/nastuh-abootalebi-eHD8Y1Znfpk-unsplash.jpg"); */
+}
+.secondSection{
+    background-image:url("../public/tshirtsBackground.png");
+}
+.sixthSection{
+    background-image:url("../public/websiteDesingBackground.png");
+}
+.thirdSection{
+    background-image:url("../public/businessCards.png");
+}
+.fourthSection{
+    background-image: url("../public/banners.png");
+}
+.fifthSection{
+    background-image: url("../public/stickers.png");
+}
+.seventhSection{
+    background-image: url("../public/brochures.png");
+}
+.ninthSection{
+    background-image:url("../public/cups-and-mugs-printing.png");
+}
+.tenthSection{
+    background-image:url("../public/tshirt-printing.png");
+}
+.eleventhSection{
+    background-image:url("../public/caps-printing.png");
+}
+.twelfthSection{
+    background-image:url("../public/overall-printing.png");
+}
+.thirteenthSection{
+    background-image:url("../public/polo-shirt-printing.png");
+}
+.fourteenthSection{
+    background-image:url("../public/hoodies-printing.png");
+}
+.landingPage >div{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    background-color:rgba(0, 0, 0, 0.5);
+    padding:3rem 2rem;
+    border:1px solid rgba(199, 199, 199, 0.61);
+}
+.landingPage:last-of-type > div{
+    background-color:transparent;
+    border:none;
+}
+.landingPage > div > p{
+    border-left:2px solid rgb(255, 174, 0);
+    padding-left:10px;
+}
+@media (max-width:425px){
+    .landingPage > div{
+        top:0;
+        left:0;
+        bottom:0;
+        right:0;
+        transform: none;
+        border:none;
+        /* background-color:rgba(71, 56, 4, 0.5); */
+        background-color:rgba(0, 0, 0, 0.5);
+        display: grid;
+        display:-ms-grid;
+        display:-moz-grid;
+        grid-template-columns: auto;
+        grid-template-rows: max-content max-content max-content;
+        justify-content: space-around;
+        align-content: center;
+    }
+    .landingPage > div{
+        padding:1rem 0.8rem;
+    }
+}
+@media (min-width:768px){
+    .landingPage > div{
+        width:600px;
+    }
+}
+@media (max-width:768px) and (min-width:426px){
+    .landingPage > div{
+        width:85%;
+    }
+}
+.landingPage > div > h1{
+    font-weight: 600;
+    margin:0;
+}
+@media (min-width:768px){
+    .landingPage > div > h1{
+        font-size:3.5rem;
+    }
+}
+@media (min-width:425px) and (max-width:768px){
+    .landingPage > div > h1{
+        font-size:3rem;
+    }
+}
+@media (max-width:425px){
+    .landingPage > div > h1{
+        font-size:2.5rem;
+    }
+}
