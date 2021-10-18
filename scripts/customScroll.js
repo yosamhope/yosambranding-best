@@ -58,9 +58,9 @@ function windowScroll(direction){
 }
 const scrollingFunction = event =>{
     //console.log(window.scrollY-scrollState);
-    if(window.scrollY-scrollState > 0 && window.scrollY-scrollState <= 20){
+    if(window.scrollY-scrollState > 0 && window.scrollY-scrollState <= 80){
         windowScroll('UP');
-    } else if(window.scrollY-scrollState < 0 && window.scrollY-scrollState >= -20){
+    } else if(window.scrollY-scrollState < 0 && window.scrollY-scrollState >= -80){
         windowScroll('DOWN');
     } else {
         windowScroll("EXTENSIVE");
@@ -68,3 +68,11 @@ const scrollingFunction = event =>{
 }
 window.addEventListener("scroll", scrollingFunction) 
 //window.addEventListener("scroll", event=>event.preventDefault())
+
+const resizeBoxes = () => {
+    let boxes = document.getElementsByClassName('box'), i;
+    for (i=0; i<boxes.length; i++){
+        boxes[i].style.height = window.innerHeight+"px";
+    }
+}
+window.visualViewport.addEventListener('resize', resizeBoxes);
