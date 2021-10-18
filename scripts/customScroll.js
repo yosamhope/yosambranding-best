@@ -1,6 +1,7 @@
 let startScrollPos=0
 let scrollState=0;
 let manualScrolling=false;
+document.requestFullscreen();
 function windowScroll(direction){
     if(direction === 'UP'){
         removeEventListener( "scroll", scrollingFunction);
